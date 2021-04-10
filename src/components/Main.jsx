@@ -49,7 +49,6 @@ class Main extends React.Component {
         <textarea name="text-output" id="text-output" className="content" disabled>
 		Type something here!
 		</textarea>
-		<script>{update()}</script>
       </div>
     );
   }
