@@ -5,7 +5,7 @@ class Howto extends React.Component {
   render() {
     return (
       <div className="Howto">
-        <h1>How to Use?</h1>
+        <h1 id="Howto">How to Use?</h1>
         <ol>
           <li>Scroll down a bit and you will find a text box where you can type anything you want.</li><br />
           <li>Just below the textbox, there is a bunch of tools which helps you customize how you want your text to appear. You can tweak them to find a suitable text for your meme or a message.</li><br />

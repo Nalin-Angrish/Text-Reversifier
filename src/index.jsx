@@ -5,7 +5,8 @@ import './css/index.css';
 
 import Intro from './components/Intro';
 import Navbar from "./components/Navbar";
-import Howto from "./components/Howto"
+import Howto from "./components/Howto";
+import Main from "./components/Main";
 
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
     <br /><br /><br /><br />
     <Intro />
     <Howto />
+    <Main />
   </React.StrictMode>,
   document.body
 );

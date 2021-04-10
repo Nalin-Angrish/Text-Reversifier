@@ -10,3 +10,27 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+select,
+textarea,
+fieldset {
+    background-color: #4d4d4d;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+fieldset {
+    background-color: #282c34;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+option {
+    padding: 10px;
+}

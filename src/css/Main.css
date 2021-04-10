@@ -1,0 +1,11 @@
+.Main {
+    padding: 40px;
+}
+
+.Main>.content {
+    width: 100%;
+}
+
+#font-style {
+    width: 100%;
+}
