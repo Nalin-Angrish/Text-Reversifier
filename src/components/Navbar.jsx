@@ -1,8 +1,8 @@
 import React from 'react';
-import "./css/Navbar.css"
-import github from "./icons/github.svg"
-import instagram from "./icons/instagram.svg"
-import website from "./icons/website.svg"
+import "../css/Navbar.css"
+import github from "../icons/github.svg"
+import instagram from "../icons/instagram.svg"
+import website from "../icons/website.svg"
 
 
 class Navbar extends React.Component {
