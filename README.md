@@ -1,5 +1,5 @@
 <p align=center>
-	<img src='https://raw.githubusercontent.com/Nalin-2005/Text-Reversifier/main/Logo.png'/>
+	<img src='https://raw.githubusercontent.com/Nalin-2005/Text-Reversifier/main/Logo.png' height=300/>
 </p>  
 
 # Text Reversifier
