@@ -11,7 +11,7 @@ import Navbar from "./Navbar";
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
-    <br /><br />
+    <br /><br /><br /><br />
     <App />
   </React.StrictMode>,
   document.body

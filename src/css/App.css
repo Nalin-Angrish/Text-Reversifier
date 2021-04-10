@@ -21,6 +21,12 @@
     color: white;
 }
 
+.gallery>img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+}
+
 a {
     color: #61dafb;
 }
