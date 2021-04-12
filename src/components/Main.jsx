@@ -61,6 +61,9 @@ function initialize(){
 
 function updateFont(){
 	var fontUrl = document.getElementById("font-style").value
+	if(fontUrl.includes("http://")){
+		fontUrl = fontUrl.replace("http://", "https://")
+	}
 	var fontName = document.getElementById("font-style").options[document.getElementById("font-style").selectedIndex].text
 	var font = new FontFace(fontName, 'url('+fontUrl+')');
 	font.load().then(function(loaded_face) {
