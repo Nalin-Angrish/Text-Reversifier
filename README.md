@@ -5,12 +5,14 @@
 # Text Reversifier
 
 A cool web-app for fun to flip letters in a text up-to-down for the Australians!  This app is made for the Australians because they live in the southern hemisphere, and so would be seeing things upside-down........ Just kidding, this app was made just for time pass for people like me who are really bored, and for the memers on Instagram who want to make memes like [this](https://www.instagram.com/p/CM437ECDJQJ/)!   
+**Note:** This Project is not intended to hurt the feelings of Australians but it is just for fun.  
 A live version of this app is available at [https://text-reversifier.netlify.app](https://text-reversifier.netlify.app).  
 
 ## Used Technologies
 
 - Node JS
 - React JS
+- Google Fonts
 
 ## How to run this app
 
