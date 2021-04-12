@@ -19,7 +19,6 @@ function update(){
 	var out = document.getElementById("text-output");
 	var horFlip = document.getElementById("horizontal-flip");
 	var verFlip = document.getElementById("vertical-flip");
-	var font = document.getElementById("font-style");
 
 	let outstyle = "orig";
 	if(verFlip.checked){
@@ -36,6 +35,40 @@ function update(){
 	}
 	out.value = output;
 }
+
+
+function initialize(){
+	// Fetch all fonts data...
+	window.fetch("https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyC6hXU9H8RuiVfowcDkYhTpf87sIruvrlc")
+	.then(response => response.json())
+	.then(data => {
+		var font_styles = document.getElementById("font-style");
+		var source_code_pro_index;
+		for(let i=0;i<data["items"].length;i++){
+			var font = data["items"][i];
+			var elem = document.createElement("option");
+			elem.innerText = font["family"];
+			elem.value = font["files"]["regular"];
+			font_styles.append(elem);
+			if(font["family"]==="Source Code Pro"){
+				source_code_pro_index = i;
+			}
+		}
+		font_styles.getElementsByTagName('option')[source_code_pro_index].selected = 'selected'
+		updateFont()
+	})
+}
+
+function updateFont(){
+	var fontUrl = document.getElementById("font-style").value
+	var fontName = document.getElementById("font-style").options[document.getElementById("font-style").selectedIndex].text
+	var font = new FontFace(fontName, 'url('+fontUrl+')');
+	font.load().then(function(loaded_face) {
+		document.fonts.add(loaded_face);
+		document.getElementById("text-output").style.fontFamily = fontName
+	})
+}
+
 
 class Main extends React.Component { 
   render() {
@@ -56,11 +89,8 @@ class Main extends React.Component {
 					<input type="checkbox" id="horizontal-flip" onChange={update}/><label htmlFor="horizontal-flip"> Horizontal Flip </label><br />
 				</div>
 				<div id="font-controls">
-					<label htmlFor="font-style"> Choose Font Style: </label><br /><br />
-					<select name="font-style" id="font-style" onChange={update}>
-						<option value="Times%20new%20Roman">Times new Roman</option>
-						<option value="Cascadia%20Code">Cascadia Code</option>
-						{/* These two are pseudo fonts and these dont work for now... actually no control here works!*/}
+					<label htmlFor="font-style"> Choose Font Style: </label><br /><sub>Powered by <a href="https://fonts.google.com">Google Fonts</a></sub><br /><br />
+					<select name="font-style" id="font-style" onChange={updateFont}>
 					</select><br />
 				</div>
 			</fieldset>
@@ -70,10 +100,14 @@ class Main extends React.Component {
         <textarea name="text-output" id="text-output" className="content" disabled>
 		Type something here!
 		</textarea>
+		<script>
+			{initialize()}
+		</script>
       </div>
     );
   }
 }
+
 
 
 export default Main;
