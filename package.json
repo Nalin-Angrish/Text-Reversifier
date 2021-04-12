@@ -1,6 +1,9 @@
 {
     "name": "text-reversifier",
     "version": "1.0.0",
+    "author": "Nalin Angrish <nalin@nalinangrish.me>",
+    "repository": { "type": "git", "url": "https://github.com/Nalin-2005/Texxt-Reversifier.git" },
+    "homepage": "https://text-reversifier.netlify.app",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.10",

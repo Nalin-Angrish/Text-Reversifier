@@ -1,3 +1,10 @@
 [build]
 publish = "build"
 command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
+  force = false
+  query = {path = ":path"}

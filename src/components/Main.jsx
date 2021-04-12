@@ -92,7 +92,9 @@ class Main extends React.Component {
 					<input type="checkbox" id="horizontal-flip" onChange={update}/><label htmlFor="horizontal-flip"> Horizontal Flip </label><br />
 				</div>
 				<div id="font-controls">
-					<label htmlFor="font-style"> Choose Font Style: </label><br /><sub>Powered by <a href="https://fonts.google.com">Google Fonts</a></sub><br /><br />
+					<label htmlFor="font-style"> Choose Font Style: </label><br />
+					<sub>Powered by <a target="_blank" href="https://fonts.google.com" rel="noreferrer">Google Fonts</a></sub>
+					<br /><br />
 					<select name="font-style" id="font-style" onChange={updateFont}>
 					</select><br />
 				</div>
