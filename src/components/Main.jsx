@@ -28,7 +28,12 @@ function update(){
 	let content = inp.value;
 	let output = "";
 	for(let i=0;i<content.length;i++){
-		output += data[outstyle][data["orig"].indexOf(content[i])];
+		let index = data["orig"].indexOf(content[i]);
+		if(index>-1){
+			output += data[outstyle][index];
+		}else{
+			output += content[i]
+		}
 	}
 	if(horFlip.checked){
 		output = reverseString(output)
