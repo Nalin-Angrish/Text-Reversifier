@@ -2,7 +2,10 @@
     "name": "text-reversifier",
     "version": "1.0.0",
     "author": "Nalin Angrish <nalin@nalinangrish.me>",
-    "repository": { "type": "git", "url": "https://github.com/Nalin-2005/Texxt-Reversifier.git" },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Nalin-2005/Texxt-Reversifier.git"
+    },
     "homepage": "https://text-reversifier.netlify.app",
     "private": true,
     "dependencies": {
@@ -13,6 +16,8 @@
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3",
+        "react-scroll": "^1.8.2",
+        "styled-components": "^5.2.3",
         "web-vitals": "^1.1.1"
     },
     "scripts": {

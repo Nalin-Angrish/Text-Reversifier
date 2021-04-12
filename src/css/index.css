@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -33,4 +37,12 @@ fieldset {
 
 option {
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.clickable {
+    cursor: pointer;
 }

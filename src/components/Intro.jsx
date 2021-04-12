@@ -5,7 +5,7 @@ import '../css/Intro.css';
 class Intro extends React.Component { 
   render() {
     return (
-      <div className="Intro">
+      <div className="Intro" id="top">
         <header className="header">
           <img src={logo} className="logo" alt="logo" />
           <h1 id="Introduction">Welcome to Text-Reversifier!</h1>
@@ -20,10 +20,6 @@ class Intro extends React.Component {
             <img src="https://i.redd.it/flb0gejg7uu11.jpg" alt="Meme 2" loading="lazy" />
             <img src="https://i.kym-cdn.com/photos/images/original/001/405/106/36a.jpg" alt="Meme 3" loading="lazy" />
           </div>
-          </p>
-          <p>
-            This Project is currently under development, please come back later.<br />
-            You can view the development status of this app at <a href="https://github.com/Nalin-2005/Text-Reversifier">GitHub</a>.
           </p>
         </header>
       </div>

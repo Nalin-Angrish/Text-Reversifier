@@ -7,6 +7,7 @@ import Intro from './components/Intro';
 import Navbar from "./components/Navbar";
 import Howto from "./components/Howto";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Intro />
     <Howto />
     <Main />
+    <Footer />
   </React.StrictMode>,
   document.body
 );
