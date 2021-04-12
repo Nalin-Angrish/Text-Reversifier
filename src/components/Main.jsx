@@ -2,19 +2,39 @@ import React from 'react';
 import '../css/Main.css';
 
 
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
 
 function update(){
 	var data = {
-		"orig":"abcdefghijklmnopqrstuvwxyz1234567890!&",
-		"hor":"&!0୧8٢მटμƸςƖzγxwvυɈƨɿpqonmlʞįiʜϱʇǝbɔdɒ",
-		"ver":"ɑpcqԍɻმμᴉๅĸɼwuobdʁƨϝnʌʍxλzƖ53ત૨ϱ˩8მ0¡⅋",
-		"horver":"⅋¡068L9૬hƐՇƖzʎxʍʌnʇsɹbdouɯๅʞſᴉɥɓɟǝpɔqɐ"
+		"orig":"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!& ",
+		"flipped":"ɐqɔpǝɟƃɥᴉɾʞlɯuodbɹsʇnʌʍxʎz∀qƆpƎℲפHIſʞ˥WNOԀQɹS┴∩ΛMX⅄ZƖᄅƐㄣϛ9ㄥ860¡⅋ "
 	}
 	var inp = document.getElementById("text-input");
 	var out = document.getElementById("text-output");
 	var horFlip = document.getElementById("horizontal-flip");
 	var verFlip = document.getElementById("vertical-flip");
 	var font = document.getElementById("font-style");
+
+	let outstyle = "orig";
+	if(verFlip.checked){
+		outstyle = "flipped";
+	}
+	
+	let content = inp.value;
+	let output = "";
+	for(let i=0;i<content.length;i++){
+		output += data[outstyle][data["orig"].indexOf(content[i])];
+	}
+	if(horFlip.checked){
+		output = reverseString(output)
+	}
+	out.value = output;
 }
 
 class Main extends React.Component { 
