@@ -40,6 +40,7 @@ class Main extends React.Component {
 					<select name="font-style" id="font-style" onChange={update}>
 						<option value="Times%20new%20Roman">Times new Roman</option>
 						<option value="Cascadia%20Code">Cascadia Code</option>
+						{/* These two are pseudo fonts and these dont work for now... actually no control here works!*/}
 					</select><br />
 				</div>
 			</fieldset>
