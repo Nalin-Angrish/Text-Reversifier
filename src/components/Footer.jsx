@@ -23,12 +23,12 @@ class Footer extends React.Component {
         </thead>
         <tbody>
           <tr>
-            <td><a href="https://www.nalinagrish.me" target="_blank" rel="noreferrer">Website</a></td>
+            <td><a href="https://www.nalinangrish.me" target="_blank" rel="noreferrer">Website</a></td>
             <td><a href="https://www.instagram.com/nalin_2005" target="_blank" rel="noreferrer">Instagram</a></td>
             <td><a href="https://www.github.com/Nalin-2005/Text-Reversifier" target="_blank" rel="noreferrer">Source</a></td>
           </tr>
           <tr>
-            <td><a href="https://www.nalinagrish.me/apps" target="_blank" rel="noreferrer">Projects</a></td>
+            <td><a href="https://www.nalinangrish.me/apps" target="_blank" rel="noreferrer">Projects</a></td>
             <td><a href="https://www.github.com/Nalin-2005" target="_blank" rel="noreferrer">GitHub</a></td>
             <td><Link onClick={scroll.scrollToTop()} className="clickable" to="top" smooth={true} offset={-70} duration={1000}>The Top</Link></td>
           </tr>
