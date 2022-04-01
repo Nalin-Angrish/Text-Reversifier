@@ -11,7 +11,7 @@ class Navbar extends React.Component {
 		  <div className="navbar">
 			  <h2>Text Reversifier
 			  <span className="right">
-				  <a href="https://github.com/Nalin-2005/Text-Reversifier" target="_blank" rel="noreferrer" title="Get the Project on GitHub">
+				  <a href="https://github.com/Nalin-Angrish/Text-Reversifier" target="_blank" rel="noreferrer" title="Get the Project on GitHub">
 				  	<img src={github} alt="Github"/>
 				  </a>&nbsp;&nbsp;
 				  <a href="https://instagram.com/nalin_2005" target="_blank" rel="noreferrer" title="Nalin Angrish's Instagram">
